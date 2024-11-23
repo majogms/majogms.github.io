@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+		
+
+</style>
+  <head>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jonas Brothers</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <style type="text/css">
+	  header,nav,main,footer{
+    /*width: 960px;*/
+    width: 100%;
+    padding: 20px;
+    margin-left: auto;
+		  margin-right: auto;}
+		  .my-navbar {
+		  background-color: #0d4689;
+		  color: #072B59;
+			  font-family: "Roboto", sans-serif;
+		  }
+		  @font-face {
+  font-family: 'Futura';
+  src: url('fonts/futura.woff2') format('woff2'),
+       url('fonts/futura.woff') format('woff'),
+       url('fonts/futura.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+		  
+
+		  .my-navbar .navbar-brand {
+  		color: #f3b517; 
+  		font-weight: bold; 
+  		text-transform: uppercase;
+			   font-family: 'Futura', sans-serif;
+			}
+
+		  .btn{
+			  background-color: #f3b517;
+			  color:#e0dbce;
+			  border-color: #f3b517;
+		  }
+		  .btn:hover{
+			  background-color: #072B59;
+			  color:#f3b517;
+			  border-color: #f3b517;
+			  
+		  }
+		  
+		  .carousel-item,.carousel-control-prev,.carousel-control-next{
+		background-color: #f3b517;
+		  }
+		  
+		  .carousel-caption{
+			  color:#e0dbce;
+		  }
+		  main{
+			  background-color: #e0dbce;
+		  }
+		  section{
+			  width: 80%;
+			  height: auto;
+			  display: block;
+			  margin-bottom: 20px;
+    		margin-top: 20px;
+   			 margin-left: auto;
+    		margin-right: auto;
+    		padding:50px;
+		  }
+		  
+		  h1{
+			  color:#0d4689;
+			  text-align: center;
+			  display: block;
+			  padding-bottom: 25px;
+				   font-family: 'Futura', sans-serif;
+			 }
+		  section p{
+			  text-align: justify;
+			  font-family: "Roboto", sans-serif;
+		  }
+		  #barra{
+    background-color: #0d4689;
+    width: 100%;
+			  height: 50px;
+			 }
+		  .card-title{
+			  color:#f3b517;
+			  font-variant: small-caps;
+			 font-weight: bold;
+		  }	
+		  
+		  .card{
+			 background-color:  #0d4689;
+			  border-bottom-left-radius: 10px;
+			  border-bottom-right-radius: 10px;
+			  
+		  }
+		  .card-text{
+			  color: #e0dbce;
+			  text-align: justify;
+			  font-family: "Roboto", sans-serif;
+		  }
+		  .btn-group{
+			  width:110%;
+			  align-items: center;
+		  }
+		  
+		  .pagination {
+ 		display: flex;
+		justify-content: center;
+ 		margin-top: 20px;
+		}
+		.pagination .page-link {
+ 		 color: #072B59;
+		  background-color: #f3b517;
+		  border: 1px solid #f3b517; 
+		}
+
+	.pagination .page-item.active .page-link {
+	  background-color: #072B59;
+	  color: white; 
+	}
+		  .pagination .page-link:hover {
+  background-color: #072B59; 
+  color: #e0dbce;
+}
+		  footer{
+			  background-color: #072B59;
+			  color:#e0dbce;
+			  width: 100%;
+			  height: 100px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+			  font-family: "Roboto", sans-serif;
+		  }
+		  h6{
+			padding-top: 40px;
+		  }
+		  .form-group{
+			  font-family: "Roboto", sans-serif;
+		  }
+		  .animate__animated {
+    animation-duration: 15s; }
+		  
+	  </style>
+	
+  </head>
+<body>
+  <div id="tarjetas" class="container-fluid"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark my-navbar"> <a class="navbar-brand" href="#">Jonas Brothers</a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	      <ul class="navbar-nav mr-auto">
+	        <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+	        <li class="nav-item"> <a class="nav-link" href="#">Gallery&nbsp;</a> </li>
+	        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Music&nbsp; </a>
+	          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Apple Music</a> <a class="dropdown-item" href="#">Spotify</a>
+	            <div class="dropdown-divider"></div>
+	            <a class="dropdown-item" href="#">YouTube</a> </div>
+            </li>
+	        <li class="nav-item"> <a class="nav-link disabled" href="#">Tour</a> </li>
+          </ul>
+	      <form class="form-inline my-2 my-lg-0">
+	        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+      </div>
+  </nav>
+    <div class="container-fluid">
+      <div class="container-fluid"></div>
+    </div>
+<div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: grey">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+	    <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+	    <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+  </ol>
+	  <div class="carousel-inner" role="listbox">
+	    <div class="carousel-item active"> <img class="d-block mx-auto img-fluid" src="imagenes/jonas.png" alt="First slide">
+	      <div class="carousel-caption">
+	        <h5>The Album</h5>
+	        <p>The next era officially starts now!</p>
+          </div>
+        </div>
+	    <div class="carousel-item"> <img class="d-block mx-auto img-fluid" src="imagenes/hermanos.jpg" alt="Second slide">
+	      <div class="carousel-caption">
+	        <h5>The Tour</h5>
+	        <p>Who’s coming?</p>
+          </div>
+        </div>
+	    <div class="carousel-item"> <img class="d-block mx-auto img-fluid" src="imagenes/the_album.jpg" alt="Third slide">
+	      <div class="carousel-caption">
+	        <h5>Waffle House</h5>
+	        <p> About making your dreams come true!</p>
+          </div>
+        </div>
+  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+
+	<div id="barra" class="w100"></div>
+	<main>
+<section>
+    <h1><b class="animate__animated animate__fadeIn animate__bounce">- THE ALBUM -</b></h1>
+		<p> The Album marca el regreso triunfante de los Jonas Brothers, un disco lleno de energía, nostalgia y madurez, después de años de exploración personal y musical, este trabajo refleja una clara evolución en su estilo. La banda fusiona con destreza géneros como pop, rock, R&B y funk, creando una sonoridad fresca que también mantiene la esencia de sus primeros éxitos, el álbum se siente más orgánico y arriesgado, al mismo tiempo que conserva esa fórmula que los ha convertido en una de las bandas más queridas.
+
+</p>
+
+<p>Las letras del álbum son un reflejo de las experiencias vividas por los hermanos, explorando temas de amor, crecimiento personal y la importancia de la conexión humana, canciones como “Wings” abren el disco con fuerza, transmitiendo un mensaje de libertad y empoderamiento, mientras que “Summer Baby” captura la esencia del verano con su ritmo pegajoso y despreocupado, cada tema invita a sumergirse en un viaje emocional, conectando de manera profunda con sus seguidores a través de su honestidad y autenticidad.</p>
+
+<p>Entre las canciones más destacadas se encuentran “Vacation Eyes” y “Little Bird”, que demuestran el equilibrio perfecto entre la experimentación y la nostalgia. Los Jonas Brothers logran mantener su frescura mientras exploran nuevos sonidos, haciendo de THE ALBUM una propuesta interesante tanto para los fanáticos de sus primeros discos como para los nuevos oyentes, la banda ha sabido cómo mantenerse relevante, ofreciendo un álbum que no solo suena actual, sino que también refleja su madurez artística y personal. </p>
+	  </section>
+
+	  <div class="container-fluid">
+  <div class="row d-flex justify-content-center">
+    <!-- Tarjeta de Nick Jonas -->
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="imagenes/nickj (1).jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Nick Jonas</h5>
+          <p class="card-text">El menor del grupo, Nick es cantante, compositor y actor. Reconocido por su voz potente y su madurez artística, es también defensor de la diabetes tipo 1, condición que él mismo padece.</p>
+          <a href="https://www.instagram.com/nickjonas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-primary" target="_blank">ig: @nickjonas</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta de Joe Jonas -->
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="imagenes/joej (1).jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Joe Jonas</h5>
+          <p class="card-text">El más extrovertido y carismático, Joe destaca por su energía en el escenario y su estilo único. Además de su carrera con los Jonas Brothers, ha destacado con DNCE.</p>
+          <a href="https://www.instagram.com/joejonas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-primary" target="_blank">ig: @joejonas</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta de Kevin Jonas -->
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
+      <div class="card">
+        <img class="card-img-top img-fluid" src="imagenes/kevinj (1).jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Kevin Jonas</h5>
+          <p class="card-text">El mayor de los Jonas Brothers, conocido por su talento en la guitarra y su actitud tranquila. Kevin es el hermano más familiar, siempre mostrando su amor por su esposa y sus hijas.</p>
+          <a href="https://www.instagram.com/kevinjonas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn btn-primary" target="_blank">ig: @kevinjonas</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+	  
+
+	  <section>
+	  <p>Los Jonas Brothers no solo son conocidos por su música, sino también por su fuerte vínculo familiar. A pesar de las distintas trayectorias personales que cada uno ha seguido, su unión siempre ha sido el pilar fundamental de la banda, han demostrado que, aunque cada uno tiene su propio estilo y proyectos, juntos logran una química única en el escenario, algo que se refleja en cada uno de sus discos y presentaciones en vivo.</p>
+		  <p>A lo largo de los años, los Jonas Brothers han sido un verdadero fenómeno global, logrando conectar con varias generaciones de fanáticos, han evolucionado desde sus primeros días en Disney Channel hasta convertirse en artistas maduros y exitosos, siempre manteniendo una conexión auténtica con su audiencia, su capacidad para reinventarse y mantenerse relevantes en la industria musical es testamento de su dedicación y pasión por lo que hacen.</p>
+		  <p>A lo largo de su carrera, los Jonas Brothers han demostrado ser mucho más que una banda de chicos. Han logrado construir una marca personal sólida que trasciende la música. Además de sus esfuerzos como músicos, los hermanos han incursionado en el mundo del entretenimiento con sus propias series de televisión, proyectos de negocios y diversas iniciativas. Su presencia en redes sociales y plataformas digitales ha permitido que conecten de una manera más directa con sus seguidores, generando una relación cercana y sincera con su audiencia. Han logrado crear una comunidad de fanáticos leales que siguen no solo su música, sino también su vida personal, siempre respaldados por una autenticidad que pocos artistas logran mantener a lo largo de los años.</p>
+		  <p>El regreso de los Jonas Brothers con <b>THE ALBUM</b> ha sido una muestra clara de su capacidad para innovar y mantenerse frescos en una industria que está en constante cambio. El disco no solo es un reflejo de su crecimiento personal y artístico, sino también de cómo han logrado adaptarse a las nuevas tendencias musicales sin perder su esencia. Los hermanos han logrado fusionar influencias de diferentes géneros y estilos, creando un sonido único que sigue capturando la atención del público joven y adulto por igual. Su evolución como artistas se ha reflejado tanto en su música como en su imagen, lo que les ha permitido mantenerse relevantes durante más de una década, algo que pocos grupos logran hacer con tal éxito.</p>
+	  </section>
+	  <div class="container">
+  <p class="text-center">Suscríbete para recibir las últimas novedades</p>
+  <form class="mx-auto" style="max-width: 400px;">
+    <div class="form-group">
+      <label for="email"><b>Email address:</b></label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd"><b>Password:</b></label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="form-check">
+      <label><input type="checkbox" class="form-check-input"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+  </form>
+</div>
+		
+<div class="container-fluid">
+    <nav>
+      <!-- Add class .pagination-lg for larger blocks or .pagination-sm for smaller blocks-->
+      <ul class="pagination">
+        <li class="page-item"> <a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> <span class="sr-only">Previous</span></a></li>
+        <li class="page-item active"> <span class="page-link"> 1 <span class="sr-only">(current)</span></span></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"> <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> <span class="sr-only">Next</span></a></li>
+      </ul>
+    </nav>
+    </div>
+	  
+    </main>
+	
+	
+	
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+	<footer>
+	  <h6 class="text-center"> <strong> Elaborado por:</strong> María José García Machorro</h6>
+    </footer>
+	
+  </body>
+	
+	
+</html>
